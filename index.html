@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        *{
+    color: rgb(168, 13, 13);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  height:100%;
+  background-color: rgb(103, 103, 103);
+}
+input{
+    width: 15vw;
+    height: 2vh;
+border: 2px solid rgb(103, 103, 103);;
+}
+form{
+    border: 1.5px solid black;
+    border-radius: 5%;
+    width: 40vw;
+    margin-top: 25vh;
+    height: 50vh;
+    background-color: rgb(244, 240, 240);
+    display: flex;
+     flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+
+}
+form>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+form>div>div{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin:15px;
+}
+button{
+    width: 8vw;
+    height: 3vh;
+ 
+    border-radius: 5%;
+    background-color: rgb(168, 13, 13);
+color: rgb(244, 240, 240);
+}
+    </style>
+</head>
+<body>
+    <div>
+        <form id="registrationForm" method="post" action="/submit">
+            <h1>Регистрация</h1>
+            <div>
+
+                <div>
+                    <label for="el">Электронная почта</label>
+                    <input type="email" name="eml" id="el">
+                </div>
+                <div>
+                    <label for="ps">Пароль</label>
+                    <input type="password" name="pswrd" id="ps">
+                </div>
+                <input type="submit" id="sub"></input>
+                <div id="mess"></div>
+            </div>
+        </form>
+    </div>
+  
+</body>
+</html>
